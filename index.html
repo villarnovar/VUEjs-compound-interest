@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compound Interest Calculator</title>
+    <link rel = "stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p id="header">COMPOUND INTEREST CALCULATOR</p>
+    <h5>The equation is A = p * [[1 + (r/n)] ^ nt]</h5>
+    
+    <div id="root">
+        <label>PRINCIPAL:</label><br>
+        <input v-model="principal" @keyup="calculate" type="number" ></input>
+    
+        <br>
+        <label>RATE%:</label><br>
+        <input v-model= "rate"  type="number"></input>
+        <br>
+  
+        <label> Number of Time Interest per Unit: </label><br>
+        <input v-model="numberComp" type="number" value="1"></input>
+        <br>
+
+        <label> TIME: </label><br>
+        <input v-model="time" @keyup="calculate" type="number"></input>
+        <br>
+
+
+
+        <p id="result" >Your Compound Interest = {{ finalAmount }}
+            
+        </p>
+</div>
+
+
+    
+</body>
+<script src="app.js"></script>
+</html>

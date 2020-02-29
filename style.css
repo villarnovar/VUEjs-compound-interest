@@ -1,0 +1,47 @@
+body{
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgba(146, 92, 25, 0.39);
+    text-transform: uppercase;
+}
+
+#header{
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+button{
+    margin: 10px;
+    border: 2px solid black;
+    font-family: Tahoma, sans-serif;
+     background-color: lightcoral;
+    font-weight: bold;
+    border-radius: 10%;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+}
+label{
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+input{
+
+    border: 2px solid black;
+    height: 35px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+#result{
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
